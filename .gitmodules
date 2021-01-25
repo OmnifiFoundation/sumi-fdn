@@ -1,0 +1,3 @@
+[submodule "site/themes/sumi"]
+	path = site/themes/sumi
+	url = git@github.com:OmnifiFoundation/sumi
