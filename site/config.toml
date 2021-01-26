@@ -1,0 +1,36 @@
+baseurl = "/"
+languageCode = "en-us"
+languageLang = "en"
+title = "Omnifi Foundation"
+summaryLength = "10"
+paginate = 8
+theme = ["sumi"]
+
+disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML"]
+
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    pre = "<i class='fa fa-heart'></i>"
+    url = "/about/"
+    weight = -100
+
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = -110
+
+  [[menu.main]]
+    name = "Articles"
+    url = "/articles/"
+    weight = -120
+
+[params]
+logo = "images/rasters/brand/logo.png"
+

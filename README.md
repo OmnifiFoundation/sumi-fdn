@@ -21,7 +21,7 @@ The styling can be found within the theme and is loaded during the build into th
 The app currently relies on HUGO. To build it's recommended to use the `jojomi/hugo` Docker image as so:
 
 ```shell
-make && docker run -it -p 8080:80 --name "sumi-hugo" -P -v $(pwd):/src jojomi/hugo hugo -d ../.build -s ./site -v; docker rm "sumi-hugo" && cp site/assets/scripts/js/*.js .build/scripts/js
+make && docker run -it -p 8081:80 --name "sumi-hugo" -P -v $(pwd):/src jojomi/hugo hugo -d ../.build -s ./site -v; docker rm "sumi-hugo" && cp site/assets/scripts/js/*.js .build/scripts/js
 docker rm -f sumi-nginx  
 docker run --name sumi-nginx -v $(pwd)/.build:/usr/share/nginx/html:ro -p 8080:80 -d nginx     
 ```
